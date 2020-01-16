@@ -1,0 +1,15 @@
+- hosts: localhost
+  #vars_files:
+   #     - secret_key.yml
+  tasks:
+     - name: "Launch EC2 Instance"
+       ec2:
+         key_name: "Abhinav"
+         region: "ap-south-1"
+         instance_type: "t2.micro"
+         image: "ami-5b673c34"
+         wait: "yes"
+         vpc_subnet_id: "subnet-06d9544a"
+         assign_public_ip: yes
+         aws_access_key: "AKIAI2UP3UQBHKTI56QQ"
+         aws_secret_key: "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"

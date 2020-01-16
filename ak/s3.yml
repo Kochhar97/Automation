@@ -1,0 +1,7 @@
+- hosts: localhost
+  tasks:
+      - aws_s3: 
+          aws_access_key: "AKIATEGANHKCEP327WCO"
+          aws_secret_key: "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"
+          bucket: "llllh"
+          mode: create
